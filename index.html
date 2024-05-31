@@ -15,15 +15,33 @@
        <main>
             <div class="container-contatti">
 
-                <article class="profilo"></article>
+                <article class="profilo" >
+
+                    
+
+                </article>
 
                 <article class="notifiche"></article>
 
-                <aside></aside>
+                <aside>
+
+                    <article class="" v-for="(item,index) in contacts">
+
+                        <img :src="item.avatar" alt="">
+    
+                        <p>{{item.name}}</p>
+
+                        <p>{{ lastDate(index) }}</p>
+    
+                        
+    
+                    </article>
+
+                </aside>
 
 
             </div>
-            
+
 
             <div class="container-messagi">
 

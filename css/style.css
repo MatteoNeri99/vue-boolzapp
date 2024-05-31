@@ -4,5 +4,17 @@
     box-sizing: border-box;
 }
 
+main{
+    display: flex;
+    width: 100vw;
 
+}
+
+div.container-contatti{
+    width: 40%;
+}
+
+div.container-messaggi{
+    width: 60%;
+}
 
