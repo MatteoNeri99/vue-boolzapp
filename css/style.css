@@ -4,17 +4,59 @@
     box-sizing: border-box;
 }
 
-main{
-    display: flex;
+body{
     width: 100vw;
 
 }
 
+main{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top:5rem ;
+
+}
+
+.profilo,
+.contatti,
+.notifiche{
+    display: flex;
+}
+
+.notifiche{
+    background-color:  #8edafc;
+    padding: 2rem;
+}
+.notifiche p:last-child{
+    text-decoration: underline;
+}
+
+.fa-bell-slash{
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    color: #8edafc;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.profilo p{
+    align-self: center;
+}
+
 div.container-contatti{
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 div.container-messaggi{
     width: 60%;
 }
 
+ img{
+border-radius: 50%;
+width: 50px;
+    
+
+}

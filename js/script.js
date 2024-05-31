@@ -171,7 +171,13 @@ createApp({
             }
         ],
 
-        ultimoMessaggio: ""
+        ultimoMessaggio: "",
+
+        io:{
+            name:"Sofia",
+            avatar:"./img/avatar_io.jpg",
+            visible: "true"
+        }
         
 
        
@@ -189,7 +195,7 @@ createApp({
     // funzione per recuperare data del ultimo messaggio
     lastDate: function (index) {
 
-        this.ultimoMessaggio= this.contacts[index].message[index].this.date ? this.contacts[index].message[ this.contacts[index].this.message.length - 1 ].this.date : ""
+       
 
     }
 

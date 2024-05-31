@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slider</title>
+    <title>Boolzapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -18,20 +19,37 @@
                 <article class="profilo" >
 
                     
+                    <img :src="io.avatar" alt="">
+    
+                    <p>{{io.name}}</p>
+
+                    
 
                 </article>
 
-                <article class="notifiche"></article>
+                <article class="notifiche">
+
+                    <i class="fa-solid fa-bell-slash"></i>
+                    
+                    <div>
+                        <p><strong>Ricevi notifiche di nuovi messaggi</strong></p>
+
+                        <p>attiva notifiche dekstop</strong></p>
+
+                    </div>
+                    
+                    
+                </article>
 
                 <aside>
 
-                    <article class="" v-for="(item,index) in contacts">
+                    <article class="contatti" v-for="(item,index) in contacts">
 
                         <img :src="item.avatar" alt="">
     
                         <p>{{item.name}}</p>
 
-                        <p>{{ lastDate(index) }}</p>
+                        <p>{{ }}</p>
     
                         
     
