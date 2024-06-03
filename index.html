@@ -11,47 +11,97 @@
 </head>
 
 <body>
+
     <div id="app">
+
+        <span></span>
 
        <main>
             <div class="container-contatti">
 
                 <article class="profilo" >
 
-                    
-                    <img :src="io.avatar" alt="">
-    
-                    <p>{{io.name}}</p>
+                    <div class="utente">
 
+                        <img :src="io.avatar" alt="">
+    
+                        <p>{{io.name}}</p>
+
+                    </div>
+
+                    <div class="opzioni-profilo">
+
+                        <ul>
+                            <li><i class="fa-solid fa-circle-notch"></i></li>
+                            <li><i class="fa-solid fa-message"></i></li>
+                            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        </ul>
+
+                       
+
+                    </div>
                     
 
                 </article>
 
                 <article class="notifiche">
 
-                    <i class="fa-solid fa-bell-slash"></i>
+                    <div class="campanella">
+
+                        <i class="fa-solid fa-bell-slash"></i>
+
+                    </div>
+
                     
+
                     <div>
                         <p><strong>Ricevi notifiche di nuovi messaggi</strong></p>
 
                         <p>attiva notifiche dekstop</strong></p>
 
                     </div>
+
+                   
+
                     
                     
                 </article>
 
                 <aside>
 
+                    <section class="barra-ricerca">
+
+                        <button>
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </button>
+
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+
+
+                    </section>
+
                     <article class="contatti" v-for="(item,index) in contacts">
 
-                        <img :src="item.avatar" alt="">
-    
-                        <p>{{item.name}}</p>
+                        <div class="container"> 
 
-                        <p>{{ }}</p>
+                            <img :src="item.avatar" alt="">
+
+
+                            <div class="nome">
+                                
+                            <p>{{item.name}}</p>
+
+                            <p class="ultimo-messaggio">ultimo messaggio inviato</p>
+
+                            </div>
+
+                       </div>
+
+                        <p class="orario">12:00</p>
     
-                        
+    
     
                     </article>
 

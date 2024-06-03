@@ -4,59 +4,170 @@
     box-sizing: border-box;
 }
 
+/* regole generali */
 body{
-    width: 100vw;
-
+    background: linear-gradient(#009688  0 17%,#dbdbd3 17% 100% );
+        width: 100%;
+        height: 100vh;
 }
 
 main{
+    width: 90%;
+    height: 95%;
     display: flex;
-    width: 70%;
     margin: 0 auto;
-    margin-top:5rem ;
-
+    margin-top: 1rem;
+    
 }
 
 .profilo,
 .contatti,
-.notifiche{
+.notifiche,
+.utente,
+ul,
+.barra-ricerca{
     display: flex;
+    padding: .3rem .5rem;
+}
+
+img{
+    border-radius: 50%;
+    width: 50px;
+        
+    
+}
+
+ul li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+hr{
+    color: black;
+}
+
+/* regole generali */
+
+/* profilo utente */
+
+.campanella{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 1rem ;
+}
+
+.profilo{
+    align-items: center;
+    justify-content: space-between;
 }
 
 .notifiche{
     background-color:  #8edafc;
-    padding: 2rem;
+    
 }
 .notifiche p:last-child{
     text-decoration: underline;
 }
 
 .fa-bell-slash{
-    font-size: 2rem;
-    width: 70px;
-    height: 70px;
+    font-size: 1rem;
     color: #8edafc;
-    background-color: white;
-    border-radius: 50%;
+    
 }
 
 .profilo p{
     align-self: center;
+    background-color: #eaeaea;
 }
+.profilo{
+    background-color: #eaeaea;
+}
+
+/* profilo utente */
+
+/* barra di ricerca */
+
+.barra-ricerca{
+    background-color:#f9f9f9 ;
+    justify-content: center;
+}
+
+.barra-ricerca input{
+    width: 90%;
+    border: transparent;
+}
+
+.barra-ricerca button{
+    padding: .2rem .7rem;
+    background-color: white;
+    border: transparent;
+}
+
+
+/* barra di ricerca */
+
+/* contatti */
 
 div.container-contatti{
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    height: 800px;
 }
+.contatti{
+    justify-content: space-between;
+}
+
+article.contatti{
+    border-bottom: 1px solid  #eaeaea;
+    padding: .5rem;
+}
+
+aside :last-child{
+    border-bottom: transparent;
+}
+
+
+.ultimo-messaggio{
+    color:  grey;
+    
+}
+
+article div.container{
+    display: flex;
+
+    margin-left: .7rem;
+ 
+}
+
+article.contatti:hover{
+    background-color: #e9ebeb;
+}
+
+.orario{
+   
+    color:black;
+    font-size: .6rem;
+}
+
+.nome{
+    margin-left:.7rem;
+}
+
+
+/* contatti */
+
+/* chat */
 
 div.container-messaggi{
-    width: 60%;
+    width: 70%;
 }
 
- img{
-border-radius: 50%;
-width: 50px;
-    
+/* chat */
 
-}
