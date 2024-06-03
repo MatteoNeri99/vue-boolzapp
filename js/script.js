@@ -177,7 +177,9 @@ createApp({
             name:"Sofia",
             avatar:"./img/avatar_io.jpg",
             visible: "true"
-        }
+        },
+
+        index:0,
         
 
        
@@ -191,6 +193,25 @@ createApp({
   },
 
   methods:{
+
+     // funzione per recuperare indice dei contatti
+
+     indexChatAperta: function (index){
+
+        this.index=index
+
+        return this.index
+        
+     },
+
+    // funzione per recuperare info sulla chat aperta
+
+    chatAperta: function (){
+
+        let index=this.indexChatAperta(this.index);
+        return index
+
+    },
 
     // funzione per recuperare data del ultimo messaggio
     lastDate: function (index) {

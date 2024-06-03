@@ -82,7 +82,7 @@
 
                     </section>
 
-                    <article class="contatti" v-for="(item,index) in contacts">
+                    <article class="contatti" v-for="(item,indice) in contacts" @click="indexChatAperta(indice)">
 
                         <div class="container"> 
 
@@ -113,7 +113,25 @@
 
             <div class="container-messagi">
 
-                <article class="profilo-chat-aperta"></article>
+                <article class="profilo-chat-aperta">
+                    <article class="profilo" >
+
+                        <div class="utente">
+    
+                            <img :src="contacts[chatAperta()].avatar" alt="">
+        
+                            <p>{{contacts[chatAperta()].name}}</p>
+    
+                        </div>
+    
+                        <div class="opzioni-profilo">
+    
+                            <ul>
+                                <li><i class="fa-solid fa-circle-notch"></i></li>
+                                <li><i class="fa-solid fa-message"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                </article>
 
                 <section class="chat"></section>
 
