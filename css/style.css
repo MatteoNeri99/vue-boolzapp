@@ -84,6 +84,12 @@ hr{
     
 }
 
+.profilo,
+aside,
+.notifiche{
+    border-right: 1px solid black;
+}
+
 .profilo p{
     align-self: center;
     background-color: #eaeaea;
@@ -181,6 +187,25 @@ div.container-messaggi{
     height: 82%;
     background-image: url(../img/mine.jpg);
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.ricevuto{
+    align-self: start;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.inviato{
+    align-self: end;
+    padding: 1rem;
+    background-color: #d5f9ba;
+    border-radius: 20px;
+    margin-bottom: 1rem;
 }
 
 /* chat */

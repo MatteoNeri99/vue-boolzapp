@@ -136,7 +136,18 @@
 
                 </article>
                 
-                <section class="chat"></section>
+                <section class="chat" >
+                    
+                    <div v-for="(element,index) in contacts[chatAperta()].messages" :class="(element.status == 'sent') ? 'inviato' : 'ricevuto' ">
+
+                        <p>{{element.message}}</p>
+
+
+                    </div>
+
+                   
+
+                </section>
 
                 <footer class="tastiera">
 
