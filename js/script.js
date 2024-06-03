@@ -180,6 +180,8 @@ createApp({
         },
 
         index:0,
+
+        messaggioInviato:"",
         
 
        
@@ -213,8 +215,28 @@ createApp({
 
     },
 
+    // funzione che crea nuovo messaggio nella chat
+
+
+    nuovoMessaggio:function(oggetto,index){
+
+        if((oggetto === "" ) == false){
+            const messaggioInviato={
+                date: '10/01/2020 15:51:00',
+                message: oggetto,
+                status: 'sent'
+            } 
+    
+            this.contacts[index].messages.push(messaggioInviato)
+
+        }
+
+    
+    },
+
+
     // funzione per recuperare data del ultimo messaggio
-    lastDate: function (index) {
+    lastDate: function () {
 
        
 
