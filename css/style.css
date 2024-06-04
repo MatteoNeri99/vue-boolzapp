@@ -144,7 +144,9 @@ aside :last-child{
 
 
 .ultimo-messaggio{
-    color:  grey;
+    color:  #bec3d0;
+    font-size: .7rem;
+    margin-top: .5rem;
     
 }
 

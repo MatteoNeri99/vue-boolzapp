@@ -93,13 +93,13 @@
                                 
                             <p>{{item.name}}</p>
 
-                            <p class="ultimo-messaggio">ultimo messaggio inviato</p>
+                            <p class="ultimo-messaggio">{{item.messages[ultimoIndice(item.messages)].date.substring(0,10)}}</p>
 
                             </div>
 
                        </div>
 
-                        <p class="orario">12:00</p>
+                        <p class="orario">{{item.messages[ultimoIndice(item.messages)].date.substring(11,16)}}</p>
     
     
     
