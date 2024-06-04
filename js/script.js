@@ -183,6 +183,10 @@ createApp({
 
         messaggioInviato:"",
 
+        data: new Date(),
+
+      
+
         contactsRicerca: [
             {
                 name: 'Michele',
@@ -386,7 +390,7 @@ createApp({
 
         if((oggetto === "" ) == false){
             const messaggioInviato={
-                date: new Date() ,
+                date: this.data.getDate() + '/' + 0 +(this.data.getMonth() + 1) + '/' + this.data.getFullYear() + ' '  + ' ' + this.data.getHours() + ':' + this.data.getMinutes() + ':' +  this.data.getSeconds() + ':',
                 message: oggetto,
                 status: 'sent'
             } 
