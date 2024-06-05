@@ -185,6 +185,8 @@ createApp({
 
         data: new Date(),
 
+        ricerca:"",
+
       
 
         contactsRicerca: [
@@ -390,32 +392,37 @@ createApp({
 
         if((oggetto === "" ) == false){
             const messaggioInviato={
-                date: this.data.getDate() + '/' + 0 +(this.data.getMonth() + 1) + '/' + this.data.getFullYear() + ' '  + ' ' + this.data.getHours() + ':' + this.data.getMinutes() + ':' +  this.data.getSeconds() + ':',
+                date: this.data.getDate() + '/'+ 0 + (this.data.getMonth() + 1) + '/' + this.data.getFullYear() + ' '  + ' ' + this.data.getHours() + ':' + this.data.getMinutes() + ':' +  this.data.getSeconds() + ':',
                 message: oggetto,
                 status: 'sent'
             } 
     
             this.contacts[index].messages.push(messaggioInviato)
 
+            
+
         }
 
-        // setTimeout (function () {
-
-        //     const messaggioRicevuto={
-        //         date: '10/01/2020 15:51:00',
-        //         message: "ok",
-        //         status: 'received'
-        //     } 
-    
-        //     contacts[index].messages.push(messaggioRicevuto)
-        // },1000)
-
-
-
-
-
-    
+        oggetto = ""
     },
+
+
+
+    //  risposta :setTimeout ( this.nuovoMessaggio  ,1000,"ok",this.chatAperta()),
+    
+
+    // funzione per avere la data corrente
+    dataCorrente: function (elemento) {
+
+       if ( Number.parseInt(elemento) < 10) {
+
+            elemento = 0 +( elemento);
+
+        
+        }
+ 
+    },
+ 
 
     // funzione per recuperare l'indice dell'ultimo elemento in un array
     ultimoIndice: function (array) {
@@ -425,6 +432,8 @@ createApp({
        return array
 
     },
+
+    // barraRicerca: this.contactsRicerca.filter ((element) => element.name.toLowerCase() == this.ricerca.toLowerCase()),
 
 
 
